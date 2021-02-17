@@ -140,8 +140,10 @@ $c=0;
  $a=7;
  $b=10;
 
- $a=$b;
-$b=$a-3;
+ $a=$a+$b;
+
+ $b=$a-$b;
+ $a=$a-$b;
  echo "a=$a <br>";
  echo "b=$b";
  echo "<br>";
